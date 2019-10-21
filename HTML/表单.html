@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>form</title>
+  <style>
+    form > div {
+      margin-bottom: 16px;
+    }
+    label[for="intro"] {
+      vertical-align: top;
+    }
+    textarea {
+      width: 300px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  
+  <form method="post" action="/updateProfile.action" enctype="application/x-www-form-urlencoded" target="_self">
+
+    <div>
+      <input type="hidden" name="productType" value="1">
+    </div>
+
+    <div>
+      <label for="userName">User Name</label>
+      <input type="text" name="userName" id="userName">
+    </div>
+
+    <div>
+      <label for="idType">Identification Type</label>
+      <select name="idType" id="idType">
+        <option value="ID">身份证</option>
+        <option value="PASSPORT">护照</option>
+        <option value="MILITARY">军官证</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="intro">Introduction</label>
+      <textarea name="intro" id="intro">QQQ</textarea>
+    </div>
+
+    <div>
+      <div>profession</div>
+      <div>
+        <input type="radio" id="professionFood" name="profession" value="food">
+        <label for="professionFood">餐饮</label>
+      </div>
+      <div>
+        <input type="radio" id="professiontechTech" name="profession" value="tech">
+        <label for="professiontechTech">科技</label>
+      </div>
+      <div>
+        <input type="radio" id="professionConstruction" name="profession" value="construction">
+        <label for="professionConstruction">建筑</label>
+      </div>
+    </div>
+    
+    <div>
+      <div>hobbies</div>
+      <div>
+        <input type="checkbox" id="hobbySports" name="hobby" value="sports">
+        <label for="hobbySports">运动</label>
+      </div>
+      <div>
+        <input type="checkbox" id="hobbyReading" name="hobby" value="reading">
+        <label for="hobbyReading">阅读</label>
+      </div>
+      <div>
+        <input type="checkbox" id="hobbyTravel" name="hobby" value="travel">
+        <label for="hobbyTravel">旅行</label>
+      </div>
+    </div>
+
+    <div>
+      <label for="email">email</label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <dvi>
+      <label for="tel">telephone</label>
+      <input type="tel" name="tel" id="tel">
+    </dvi>
+
+
+    <div>
+      <button>Submit</button>
+      <input type="reset" value="reset">
+    </div>
+
+  </form>
+
+
+
+  
+</body>
+</html>
